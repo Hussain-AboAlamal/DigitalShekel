@@ -1,12 +1,12 @@
 import React, { PropsWithChildren } from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 type ElementProps = PropsWithChildren<{}>;
 
 const Container = ({children}: ElementProps) => {
-    return <View style={styles.container}>
+    return <ScrollView style={styles.container}>
         {children}
-    </View>
+    </ScrollView>
 }
 
 const styles = StyleSheet.create({

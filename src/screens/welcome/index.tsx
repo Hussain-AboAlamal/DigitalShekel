@@ -39,6 +39,7 @@ const WelcomeScreen = ({navigation}: any) => {
                 label={intl.formatMessage({id: 'enterwalletId'})}
                 value={model.walletId}
                 onChangeText={(value) => onModelChagne('walletId', value)}
+                keyboardType="numeric"
             />
 
             <Button

@@ -2,20 +2,18 @@ import React from "react";
 import { GestureResponderEvent, StyleSheet } from "react-native";
 
 import { Button as PaperButton } from "react-native-paper";
+import { Props as PaperButtonProps } from "react-native-paper/src/components/Button/Button";
 
 import Styles from '../../../src/styles';
 
-export type ElementProps = {
-    mode?: 'text' | 'outlined' | 'contained' | 'elevated' | 'contained-tonal';
+export type ElementProps = Omit<PaperButtonProps, 'children'> & {
     text: string;
-    disabled?: boolean;
-    onPress: (e: GestureResponderEvent) => void;
 };
 
-function Button({text, ...rest}: ElementProps): React.JSX.Element {
+function Button({text, style, ...rest}: ElementProps): React.JSX.Element {
     return (
         <PaperButton
-        style={styles.container}
+        style={[styles.container, style]}
         mode="contained"
         {...rest}>
             {text}

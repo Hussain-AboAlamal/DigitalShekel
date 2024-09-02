@@ -1,7 +1,18 @@
 export default {
+    activeLocks: 'Active Locks',
+    close: 'Close',
     dashboard: 'Dashboard',
+    defund: 'Defund',
     enterwalletId: 'Enter Wallet ID',
+    fund: 'Fund',
+    lock: 'Lock',
+    locked: 'Locked',
+    noRecords: 'No records to show',
     openExistingWallet: 'Open Existing Wallet',
     openNewWallet: 'Open New Wallet',
+    recentTransactions: 'Recent Transactions',
+    total: 'Total',
+    transfer: 'Transfer',
+    viewAll: 'View All',
     welcome: 'Hello',
 }
